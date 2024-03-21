@@ -13,7 +13,7 @@ def load_data(file):
 def main():
     st.title('CSV and XLS Data Visualizer')
     
-    uploaded_file = st.file_uploader("Upload CSV or XLS file", type=['csv', 'xls'])
+    uploaded_file = st.file_uploader("Upload CSV", type=['csv'])
     
     if uploaded_file is not None:
         data = load_data(uploaded_file)
